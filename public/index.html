@@ -629,7 +629,7 @@
     <div class="footer-contacto">
       <p>¿Tienes alguna duda sobre la actividad o tu registro?</p>
       <a id="linkContacto" class="btn-whatsapp" href="#" target="_blank" rel="noopener">
-        💬 Contáctanos por WhatsApp
+        💬 WhatsApp
       </a>
     </div>
   </div>
@@ -637,7 +637,6 @@
   <script>
     const CONFIG = {
       telefonoWhatsApp: "584248855768",
-      telefonoVisible: "+58 424-8855768",
       mensajeWhatsApp: "¡Bendiciones! Quisiera saber más información sobre la actividad Presagio: El Cambio de Un Sistema.",
 
       anuncios: [
@@ -666,10 +665,10 @@
     let estadoCupos = { maxCupos: 250, ocupados: 0, disponibles: 250, lleno: false };
     let modoAuth = "crear";
 
-    // Contacto inferior
+    // Contacto inferior (sin mostrar el número en pantalla)
     const linkContacto = document.getElementById("linkContacto");
     linkContacto.href = `https://wa.me/${CONFIG.telefonoWhatsApp}?text=${encodeURIComponent(CONFIG.mensajeWhatsApp)}`;
-    linkContacto.textContent = `💬 WhatsApp: ${CONFIG.telefonoVisible}`;
+    linkContacto.textContent = "💬 WhatsApp";
 
     // Anuncios
     document.getElementById("listaAnuncios").innerHTML = CONFIG.anuncios
