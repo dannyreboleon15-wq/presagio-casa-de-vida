@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const CLAVE_ADMIN = "iglesia2026";
 const MAX_CUPOS = 250;
-const SHEETS_URL = "https://script.google.com/macros/s/AKfycbwMBQnsML1V8yVThy9Cgp2bnKEYOoF2UUVkTSrNOit81JbCInK38B1-P0xJGzYRDUk/exec";
+const SHEETS_URL = "https://script.google.com/macros/s/AKfycbz-8KX14Ti3zxNeFRkFwakP9wWPwJDi_3tBM9X2ACiarneeJCqo3VBl1RRGOEGQxSM/exec";
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
